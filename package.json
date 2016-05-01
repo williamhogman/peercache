@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aevy/peercache/issues"
   },
-  "homepage": "https://github.com/aevy/peercache#readme"
+  "homepage": "https://github.com/aevy/peercache#readme",
+  "dependencies": {
+    "kad": "^1.5.5"
+  }
 }
