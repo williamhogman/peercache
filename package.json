@@ -1,0 +1,19 @@
+{
+  "name": "peercache",
+  "version": "1.0.0",
+  "description": "P2P Trustful caching mechanism",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aevy/peercache.git"
+  },
+  "author": "William Rudenmalm et al.",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aevy/peercache/issues"
+  },
+  "homepage": "https://github.com/aevy/peercache#readme"
+}
