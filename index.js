@@ -1,5 +1,7 @@
+"use strict"
 // Peercache
 
+const kad = require("kad")
 const connect = require("./lib/network.js")
 
 const me = {
@@ -12,7 +14,10 @@ const seed = {
   port: parseInt(process.argv[3]),
 }
 
-connect(me, seed, new require("kad").storage.MemStore()).then(dht => {
+const storage = new kad.storage.MemStore(),
+      transport = kad.transports.UDP
+
+connect(me, seed, transport, storage).then(dht => {
   console.log("foo")
   dht.put("test", "x", () => {
     dht.get("test", (err, val) => {
